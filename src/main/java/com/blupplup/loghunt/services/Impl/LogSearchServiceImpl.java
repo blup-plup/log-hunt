@@ -24,7 +24,7 @@ public class LogSearchServiceImpl implements LogSearchService {
 
     private static final Logger logger = LoggerFactory.getLogger(LogSearchServiceImpl.class);
 
-    private static final long FILE_SEGMENT_SIZE = 1024l;
+    private static final long FILE_SEGMENT_SIZE = 1024l*1024l;
 
     @Override
     public void getLogsBetween(String startDateString, String endDateString, String directoryPath) throws IOException{
